@@ -1,0 +1,37 @@
+{
+  "name": "smile-greetings-online",
+  "description": "online e-greeting cards which brings a smile, for any occasion",
+  "author": [
+    "Pramod"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "6.10.3",
+    "npm": "3.10.10"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "express": "^4.16.2",
+    "firebase": "^3.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reactfire": "^1.0.0"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "local": "npm-run-all -p start-react watch-css",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

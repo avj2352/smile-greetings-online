@@ -1,0 +1,19 @@
+/*
+* author: Pramod AJ
+* date: 29th Nov 2017
+* description: Common mixins will be provided here
+*/
+
+@mixin clearfix {
+    &::after{
+        content:""; //Without the content ppty, a pseudo-element will not appear on the page.
+        display: table; // Standard version of the clearfix
+        clear:both;
+    }
+}//end:clearfix
+
+@mixin style-link-text($color) { // @include style-link-text($color-text-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+}//end:style-link-text
