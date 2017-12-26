@@ -1,0 +1,16 @@
+// Pramod AJ
+// All Base CSS definitions come here
+
+html {
+    height: 100%;
+    font-size: 10px;
+ }
+ 
+ body {
+ /* Remember to use the other versions for IE 10 and older browsers! */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100%;
+ color: #eee;
+ }

@@ -1,2 +1,26 @@
 // Pramod AJ
 // All type fonts are defined here
+
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+body {
+    font-family: 'lato', sans-serif;
+    .login {
+        header {
+            font-family: 'Pacifico', cursive;
+            .title {
+                font-size: 4rem;
+                @include create-font-shadow;
+            }
+            .subtitle {
+                font-size: 4.5rem;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                @include create-font-shadow;
+            }
+        }
+    }
+}//end:body
