@@ -12,6 +12,7 @@ class Login extends Component {
                         <img src={logo} width="10%" height="auto"/>
                     </div>
                     <div className="title">Smile Greetings Online</div>
+                    <div className="subtitle">Create.Share.Celebrate</div>
                 </header>
             </div>
         );

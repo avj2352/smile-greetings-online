@@ -9,7 +9,7 @@
 * description: Common mixins will be provided here
 */
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 html {
   height: 100%;
@@ -73,6 +73,11 @@ body {
     font-family: 'Pacifico', cursive; }
     body .login header .title {
       font-size: 4rem;
+      text-shadow: 2px 2px 2px #969696; }
+    body .login header .subtitle {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
       text-shadow: 2px 2px 2px #969696; }
 
 .login {
