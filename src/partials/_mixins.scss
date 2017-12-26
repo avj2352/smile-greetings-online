@@ -17,3 +17,19 @@
     text-transform: uppercase;
     color: $color;
 }//end:style-link-text
+
+@mixin blur-effect  {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}//end:blur-effect
+
+@mixin clear-blur-effect  {    
+    filter: none;
+}//end:blur-effect
+
+@mixin create-font-shadow {
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
