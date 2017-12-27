@@ -16,14 +16,55 @@
     background-blend-mode: color;
     // @include blur-effect;
     z-index: 0;
-
+    
     header {
+        flex-direction: row;
         text-align: center;        
         position: relative;
-        width: 100%;
+        // width: 100%;
         // border: 1px solid orange;
         // @include clear-blur-effect;
         z-index: 10;
-    }
+
+        .logo-image {
+            // border: 1px solid orangered;
+            position: relative;  
+            float: left;          
+            width: 15%;
+        }//end:logo-image
+        .logo-content {
+            // border: 1px solid greenyellow;
+            position: relative;  
+            float: left;
+            text-align: left;
+            width: 60%;
+        }
+    }//end:header
+
+    section {
+        flex-direction: row-reverse;
+        // border: 1px solid red;
+        // height: 200vh;
+        padding: 0 20px;
+        margin: 10px 0;
+        .login-modal-section {
+            border: 1px solid orangered;
+            float: left;
+            margin: 0 35px;
+            width: 40%; 
+            height: 70vh;
+        }
+
+        .rotating-card-section {
+            position: absolute;
+            border: 1px solid white;
+            float: right;
+            right: 30px;
+            top:25px;
+            margin: 0 15px;
+            width: 30%;
+            height: 95vh;
+        }
+    }//end:section
     
-}
+}//end:login
