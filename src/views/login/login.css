@@ -116,6 +116,22 @@ body {
       font-family: 'Roboto', sans-serif;
       text-shadow: 2px 2px 2px #969696; }
 
+.login-modal {
+  color: #362f2d;
+  font-size: 1.5rem; }
+  .login-modal__header h1 {
+    font-size: 2rem; }
+  .login-modal__header p {
+    margin-top: 10px; }
+  .login-modal__header span.fbtext {
+    color: #3b5998; }
+  .login-modal__header span.googletext {
+    color: #dc4e41; }
+  .login-modal__header span.twittertext {
+    color: #55acee; }
+  .login-modal__header span.githubtext {
+    color: #114c82; }
+
 .login {
   display: flex;
   flex-direction: column;
@@ -147,11 +163,9 @@ body {
     padding: 0 20px;
     margin: 10px 0; }
     .login section .login-modal-section {
-      border: 1px solid orangered;
       float: left;
       margin: 0 35px;
-      width: 40%;
-      height: 70vh; }
+      width: 40%; }
     .login section .rotating-card-section {
       position: absolute;
       border: 1px solid white;

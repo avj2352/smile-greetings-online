@@ -38,4 +38,11 @@
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+@mixin box-shadow-effect-02 {
+    -webkit-box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.75);
 }

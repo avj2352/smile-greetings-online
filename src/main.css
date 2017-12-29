@@ -115,3 +115,19 @@ body {
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
       text-shadow: 2px 2px 2px #969696; }
+
+.login-modal {
+  color: #362f2d;
+  font-size: 1.5rem; }
+  .login-modal__header h1 {
+    font-size: 2rem; }
+  .login-modal__header p {
+    margin-top: 10px; }
+  .login-modal__header span.fbtext {
+    color: #3b5998; }
+  .login-modal__header span.googletext {
+    color: #dc4e41; }
+  .login-modal__header span.twittertext {
+    color: #55acee; }
+  .login-modal__header span.githubtext {
+    color: #114c82; }
