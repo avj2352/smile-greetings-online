@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import LoginModal from './../../components/login-modal/login-modal.component';
 import PreviewCard from './../../components/preview-cards/preview-card.component';
 //CSS and Assets
-import logo from './../../assets/logo/logo.png';
+import logo from './../../assets/logo/logo.svg';
 import './login.css';
 
 class Login extends Component {

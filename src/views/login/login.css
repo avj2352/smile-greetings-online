@@ -132,6 +132,10 @@ body {
   .login-modal__header span.githubtext {
     color: #114c82; }
 
+.login-form-section form button {
+  font-size: 1.5rem;
+  color: white; }
+
 .login {
   display: flex;
   flex-direction: column;
