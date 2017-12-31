@@ -189,6 +189,7 @@ body {
       padding: 10px;
       margin: 10px auto; }
     .login-form-section form button {
+      cursor: pointer;
       display: block;
       border: 1px solid #5577c0;
       background-color: #3b5998;
@@ -208,3 +209,6 @@ body {
     .register-section a:hover {
       color: #dc4e41;
       text-decoration: underline; }
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus {
+  outline: 0px !important; }

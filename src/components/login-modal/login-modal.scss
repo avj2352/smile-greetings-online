@@ -63,6 +63,7 @@
             margin:10px auto;                        
         }
         button {
+            cursor:pointer;
             display: block;
             border: 1px solid $color-facebook-light;
             background-color: $color-facebook;                  
@@ -88,3 +89,7 @@
         }
     }//end:a
 }//end:.register-section
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus {
+    outline:0px !important;
+}
