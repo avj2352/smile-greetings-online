@@ -136,44 +136,79 @@ body {
   font-size: 1.5rem;
   color: white; }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
+.login-modal {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 131, 0.4)), url("./../../assets/login_background.jpg");
-  background-size: cover;
-  background-blend-mode: color;
-  z-index: 0; }
-  .login header {
-    flex-direction: row;
+  height: 65vh;
+  border-radius: 20px;
+  background-color: rgba(201, 201, 201, 0.267);
+  -webkit-box-shadow: 10px 10px 19px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px -6px rgba(0, 0, 0, 0.75); }
+  .login-modal__header {
     text-align: center;
-    position: relative;
-    z-index: 10; }
-    .login header .logo-image {
+    padding: 2px; }
+    .login-modal__header h1 {
+      display: block;
+      margin: 5px 15px;
+      padding: 5px 0;
+      border-bottom: 1px solid #362f2d; }
+
+.social-icons-section {
+  padding: 0 10px 10px; }
+  .social-icons-section img {
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    width: 15%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .2s; }
+    .social-icons-section img:first-child {
+      margin-left: 5%; }
+    .social-icons-section img:not(:last-child) {
+      margin-right: 10%; }
+    .social-icons-section img:hover {
+      transform: translateY(-5px) scale(1.03);
+      -webkit-filter: none;
+      filter: none; }
+
+.login-form-section {
+  border-top: 1px solid #362f2d;
+  border-bottom: 1px solid #362f2d;
+  margin: 5px 15px; }
+  .login-form-section form {
+    text-align: center;
+    position: relative; }
+    .login-form-section form input {
       position: relative;
-      float: left;
-      width: 15%; }
-    .login header .logo-content {
-      position: relative;
-      float: left;
-      text-align: left;
-      width: 60%; }
-  .login section {
-    flex-direction: row-reverse;
-    padding: 0 20px;
-    margin: 10px 0; }
-    .login section .login-modal-section {
-      float: left;
-      margin: 0 35px;
-      width: 40%; }
-    .login section .rotating-card-section {
-      float: right;
-      right: 30px;
-      top: 25px;
-      margin: 0 15px;
-      width: 50%;
-      height: 68vh; }
+      left: 0;
+      display: block;
+      border-radius: 15px;
+      width: 90%;
+      padding: 10px;
+      margin: 10px auto; }
+    .login-form-section form button {
+      cursor: pointer;
+      display: block;
+      border: 1px solid #5577c0;
+      background-color: #3b5998;
+      width: 100%;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px; }
+
+.register-section {
+  text-align: center; }
+  .register-section a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #969696; }
+    .register-section a:hover {
+      color: #dc4e41;
+      text-decoration: underline; }
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus {
+  outline: 0px !important; }
