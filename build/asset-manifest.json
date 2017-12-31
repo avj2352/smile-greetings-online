@@ -1,8 +1,13 @@
 {
-  "main.css": "static/css/main.c32e3836.css",
-  "main.css.map": "static/css/main.c32e3836.css.map",
-  "main.js": "static/js/main.25269140.js",
-  "main.js.map": "static/js/main.25269140.js.map",
-  "static\\media\\login_background.jpg": "static/media/login_background.2514878b.jpg",
-  "static\\media\\logo.png": "static/media/logo.cef9eee4.png"
+  "main.css": "static/css/main.23050f23.css",
+  "main.css.map": "static/css/main.23050f23.css.map",
+  "main.js": "static/js/main.4b3b2b08.js",
+  "main.js.map": "static/js/main.4b3b2b08.js.map",
+  "static\\media\\001-github.svg": "static/media/001-github.21d620ef.svg",
+  "static\\media\\002-google-plus.svg": "static/media/002-google-plus.8429afad.svg",
+  "static\\media\\003-twitter.svg": "static/media/003-twitter.a57ea219.svg",
+  "static\\media\\004-facebook.svg": "static/media/004-facebook.c509a4c4.svg",
+  "static\\media\\intro-video.mpg": "static/media/intro-video.41424d73.mpg",
+  "static\\media\\login_background.jpg": "static/media/login_background.90b1bbf8.jpg",
+  "static\\media\\logo.svg": "static/media/logo.222138c0.svg"
 }
