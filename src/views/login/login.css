@@ -103,10 +103,14 @@ body {
     width: calc(3*((100% - 3 * 2rem) / 4) + 2*(2rem)); }
 
 @media (max-width: 320px) {
-  /* smartphones, Android phones, landscape iPhone */ }
+  /* smartphones, Android phones, landscape iPhone */
+  .login section .login-modal-section {
+    width: 50% !important; } }
 
 @media (max-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */ }
+  /* smartphones, Android phones, landscape iPhone */
+  .login section .login-modal-section {
+    width: 50% !important; } }
 
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */

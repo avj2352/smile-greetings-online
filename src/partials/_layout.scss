@@ -55,11 +55,25 @@
 
 @media (max-width:320px)  { 
     /* smartphones, Android phones, landscape iPhone */ 
+    .login {                        
+        section {        
+            .login-modal-section {                            
+                width: 50% !important;            
+            }                        
+        }//end:section
+    }
     
 }
 
 @media (max-width:480px)  { 
     /* smartphones, Android phones, landscape iPhone */ 
+    .login {                        
+        section {        
+            .login-modal-section {                            
+                width: 50% !important;            
+            }                        
+        }//end:section
+    }
     
 }
 @media (max-width:600px)  { 
