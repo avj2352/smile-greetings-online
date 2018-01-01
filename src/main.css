@@ -102,6 +102,30 @@ body {
   .row .col-3-of-4 {
     width: calc(3*((100% - 3 * 2rem) / 4) + 2*(2rem)); }
 
+@media (max-width: 320px) {
+  /* smartphones, Android phones, landscape iPhone */ }
+
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */ }
+
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .login section .login-modal-section {
+    width: 50% !important; } }
+
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .login section .login-modal-section {
+    width: 50% !important; } }
+
+@media (max-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .login section .login-modal-section {
+    width: 50% !important; } }
+
+@media (max-width: 1281px) {
+  /* hi-res laptops and desktops */ }
+
 body {
   font-family: 'lato', sans-serif; }
   body .login header {

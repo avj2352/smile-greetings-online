@@ -52,3 +52,46 @@
     }//end:.col-3-of-4
 
 }//end:row
+
+@media (max-width:320px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    
+}
+
+@media (max-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    
+}
+@media (max-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .login {                        
+        section {        
+            .login-modal-section {                            
+                width: 50% !important;            
+            }                        
+        }//end:section
+    }
+}
+@media (max-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .login {                        
+        section {        
+            .login-modal-section {                            
+                width: 50% !important;            
+            }                        
+        }//end:section
+    }
+}
+@media (max-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .login {                        
+        section {        
+            .login-modal-section {                            
+                width: 50% !important;            
+            }                        
+        }//end:section
+    }
+}
+@media (max-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+}
