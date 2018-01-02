@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Login from './views/login/login.view';
+import DemoCard from './views/demo-card/demo-card.view';
 import {
   BrowserRouter as Router,
   Route,
@@ -12,6 +13,7 @@ class App extends Component {
       <Router>
         <div>          
           <Route exact path="/" component={Login}/>          
+          <Route exact path="/demo" component={DemoCard}/>          
         </div>
       </Router>
     );
