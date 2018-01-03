@@ -1,15 +1,16 @@
 {
-  "main.css": "static/css/main.8bbc251a.css",
-  "main.css.map": "static/css/main.8bbc251a.css.map",
-  "main.js": "static/js/main.fa05fe00.js",
-  "main.js.map": "static/js/main.fa05fe00.js.map",
+  "main.css": "static/css/main.ff7ca5ee.css",
+  "main.css.map": "static/css/main.ff7ca5ee.css.map",
+  "main.js": "static/js/main.14b6c6d7.js",
+  "main.js.map": "static/js/main.14b6c6d7.js.map",
   "static\\media\\001-github.svg": "static/media/001-github.21d620ef.svg",
   "static\\media\\002-google-plus.svg": "static/media/002-google-plus.8429afad.svg",
   "static\\media\\003-twitter.svg": "static/media/003-twitter.a57ea219.svg",
   "static\\media\\004-facebook.svg": "static/media/004-facebook.c509a4c4.svg",
-  "static\\media\\beach.jpg": "static/media/beach.9551922a.jpg",
   "static\\media\\card-background-season-01.jpg": "static/media/card-background-season-01.c5e37274.jpg",
   "static\\media\\intro-video.mpg": "static/media/intro-video.41424d73.mpg",
   "static\\media\\login_background.jpg": "static/media/login_background.90b1bbf8.jpg",
-  "static\\media\\logo.svg": "static/media/logo.222138c0.svg"
+  "static\\media\\logo.svg": "static/media/logo.222138c0.svg",
+  "static\\media\\lovely-couple.PNG": "static/media/lovely-couple.f862ce81.PNG",
+  "static\\media\\nature-animated-03.gif": "static/media/nature-animated-03.8b67a7d7.gif"
 }

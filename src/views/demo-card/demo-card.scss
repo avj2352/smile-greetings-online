@@ -11,8 +11,10 @@
     width: 100%;
     height: 100vh;
 
-    background: linear-gradient(right bottom, rgba($light-green,0.5), rgba($dark-green,0.4)),
-    url('./../../assets/backgrounds/beach.jpg');
+    // background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
+    // url('./../../assets/backgrounds/nature-animated-03.gif');
+    background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
+    url('./../../assets/backgrounds/nature-animated-03.gif');
     
     background-size: cover;
     background-blend-mode: color;
@@ -28,86 +30,74 @@
 }
 
 .card {
-    //Let's define the perspective for 3d rotation
-    perspective: 150rem; //This will be the parent element. Not supported in firefox
-    -moz-perspective: 150rem;
-    position: relative;    
-    width: 90%;
-    height: 80vh;
-    
-    
     &__side {
-        // border: 1px solid blue;
-        // background-color: orangered;
-        // height: 40rem;
-        transition: all .8s ease;
-        position: absolute;
-        top:0;
-        height: inherit;
-        left: 0;
-        width: 100%;
-        backface-visibility: hidden; // This will fix the opacity issue
-        border-radius: 15px;
-        padding: 5px 15px;
-        @include box-shadow-effect;
+        &--front {            
+            .top-section {    
+                height: 20vh;                            
+                text-align: right;
+                font-family: 'Lobster', cursive;
+                font-size: 3rem;
+                color: white;
+                h1 {
+                    margin: 10px 15px;
+                }
+            }//end:top-section
 
-        &--front {  
-            //Front side design goes here
-            background-color: $color-white;
-            background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
-            url('./../../assets/backgrounds/card-background-season-01.jpg');
-            background-size: cover;
-            background-blend-mode: color;
-            color: $color-primary-dark;
-        }//end:front
-        
-        &--back {
-            //Back side design goes here
-            color: white;            
-            transform: rotateY(180deg);
-            //first card
-            &-1 {                
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
-            //second card
-            &-2 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
-            //third card
-            &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
-        }//end:back
-    //Rotating EFX for the card faces.    
-    }//end:side
-    
-    &:hover &__side {
-        &--front {
-        transform: rotateY(-180deg);
-        }
-        &--back {
-        transform: rotateY(0);
-        }
-    }
-        
+            .photo-section {
+                position: relative;
+                overflow: hidden;
+                top: -5vh;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 auto;
+                z-index: 100;
+                border: 5px solid white;
+                img {
+                    width: 110%;
+                }
+            }//end:photo-section
+
+            .middle-section {
+                display: block;
+                position: relative;
+                top: -22vh;
+                font-size: 4rem;
+                color: $card-blue-font;
+                font-family: 'Dancing Script', cursive;
+                position: relative;
+                height: 42vh;
+                background-color: white;
+                background-size: cover; // Always try to fit the image inside the element
+                background-position: top; //The top of the image always stays on top, the bottom can get cropped
+                // border: 1px solid white;
+                padding: 0px 10px;
+                clip-path: polygon(0% 30%, 100% 0%, 100% 70%, 0% 100%);  //Adding a polygon so that the element will still get a shape
+
+                p {
+                    position: relative;
+                    top:95px;
+                }
+            }//end:middle-section
+            
+            .bottom-section {                
+                // border: 1px solid white;
+                font-size: 3rem;
+                text-align: center;
+                background-color: rgb(51, 51, 51);
+                height: 4vh;
+                color: white;
+                position: sticky;
+                bottom: -5px;
+                padding: 0px 10px;
+                width: 100%;      
+                p {
+                    position: relative;
+                    top:5px;
+                }          
+            }//end:bottom-section
+
+        }//end:card__side--front
+    }//end:card__side
 }//end:card
 
-@media (min-width:690px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    .demo-card {
-        .card-container {
-            // border: 1px solid white;
-            width: 50%;
-        }//end:card-container    
-    }
-}
-
-@media (min-width:800px) { 
-    /* big landscape tablets, laptops, and desktops */ 
-    .demo-card {
-        .card-container {
-            // border: 1px solid white;
-            width: 36%;
-        }//end:card-container    
-    }
-}
