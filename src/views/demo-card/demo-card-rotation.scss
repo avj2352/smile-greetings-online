@@ -1,0 +1,87 @@
+@import "./../../main.scss";
+
+//CSS Related to Rotation
+.card {
+    //Let's define the perspective for 3d rotation
+    perspective: 150rem; //This will be the parent element. Not supported in firefox
+    -moz-perspective: 150rem;
+    position: relative;    
+    width: 90%;
+    height: 80vh;
+    
+    
+    &__side {
+        // border: 1px solid blue;
+        // background-color: orangered;
+        // height: 40rem;
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        height: inherit;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; // This will fix the opacity issue
+        border-radius: 15px;
+        padding: 5px 15px;
+        @include box-shadow-effect;
+
+        &--front {  
+            //Front side design goes here
+            background-color: $color-white;
+            background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
+            url('./../../assets/backgrounds/card-background-season-01.jpg');
+            background-size: cover;
+            background-blend-mode: color;
+            color: $color-primary-dark;
+        }//end:front
+        
+        &--back {
+            //Back side design goes here
+            color: white;            
+            transform: rotateY(180deg);
+            //first card
+            &-1 {                
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+            //second card
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            //third card
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }//end:back
+    //Rotating EFX for the card faces.    
+    }//end:side
+    
+    &:hover &__side {
+        &--front {
+        transform: rotateY(-180deg);
+        }
+        &--back {
+        transform: rotateY(0);
+        }
+    }
+        
+}//end:card
+
+@media (min-width:690px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .demo-card {
+        .card-container {
+            // border: 1px solid white;
+            width: 50%;
+        }//end:card-container    
+    }
+}
+
+@media (min-width:800px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .demo-card {
+        .card-container {
+            // border: 1px solid white;
+            width: 36%;
+        }//end:card-container    
+    }
+}
