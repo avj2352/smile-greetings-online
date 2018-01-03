@@ -22,7 +22,8 @@
         width: 100%;
         backface-visibility: hidden; // This will fix the opacity issue
         border-radius: 15px;
-        padding: 5px 15px;
+        overflow: hidden;
+        padding: 5px 0px;
         @include box-shadow-effect;
 
         &--front {  

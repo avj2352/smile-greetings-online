@@ -11,6 +11,7 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster");
 html {
   height: 100%;
   font-size: 10px; }
@@ -173,7 +174,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 131, 0.4)), url("./../../assets/backgrounds/beach.jpg");
+  background: linear-gradient(right bottom, rgba(104, 135, 230, 0.5), rgba(25, 53, 137, 0.4)), url("./../../assets/backgrounds/nature-animated-03.gif");
   background-size: cover;
   background-blend-mode: color;
   z-index: 0; }
@@ -185,3 +186,57 @@ body {
     width: 80%;
     height: 90vh;
     margin: 55px auto; }
+
+.card__side--front .top-section {
+  height: 20vh;
+  text-align: right;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  color: white; }
+  .card__side--front .top-section h1 {
+    margin: 10px 15px; }
+
+.card__side--front .photo-section {
+  position: relative;
+  overflow: hidden;
+  top: -5vh;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 100;
+  border: 5px solid white; }
+  .card__side--front .photo-section img {
+    width: 110%; }
+
+.card__side--front .middle-section {
+  display: block;
+  position: relative;
+  top: -22vh;
+  font-size: 4rem;
+  color: #0C3C8E;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  height: 42vh;
+  background-color: white;
+  background-size: cover;
+  background-position: top;
+  padding: 0px 10px;
+  clip-path: polygon(0% 30%, 100% 0%, 100% 70%, 0% 100%); }
+  .card__side--front .middle-section p {
+    position: relative;
+    top: 95px; }
+
+.card__side--front .bottom-section {
+  font-size: 3rem;
+  text-align: center;
+  background-color: #333333;
+  height: 4vh;
+  color: white;
+  position: sticky;
+  bottom: -5px;
+  padding: 0px 10px;
+  width: 100%; }
+  .card__side--front .bottom-section p {
+    position: relative;
+    top: 5px; }
