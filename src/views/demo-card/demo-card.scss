@@ -3,26 +3,22 @@
 .demo-card {
     display: flex;     
     flex-direction: column;   
-    position: absolute;
-    // overflow-y: scroll;
+    position: absolute;    
     text-align: center;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh;    
 
-    // background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
-    // url('./../../assets/backgrounds/nature-animated-03.gif');
     background: linear-gradient(right bottom, rgba($light-blue,0.5), rgba($dark-blue,0.4)),
-    url('./../../assets/backgrounds/nature-animated-03.gif');
-    
+    url('./../../assets/backgrounds/login_background.jpg');    
     background-size: cover;
     background-blend-mode: color;
+
     @include clearfix;
     z-index: 0;
 
-.card-container {
-        // border: 1px solid white;
+.card-container {        
         width: 80%;
         height: 90vh;
         margin: 55px auto;            
@@ -69,8 +65,7 @@
                 height: 42vh;
                 background-color: white;
                 background-size: cover; // Always try to fit the image inside the element
-                background-position: top; //The top of the image always stays on top, the bottom can get cropped
-                // border: 1px solid white;
+                background-position: top; //The top of the image always stays on top, the bottom can get cropped                
                 padding: 0px 10px;
                 clip-path: polygon(0% 30%, 100% 0%, 100% 70%, 0% 100%);  //Adding a polygon so that the element will still get a shape
 
@@ -78,26 +73,52 @@
                     position: relative;
                     top:95px;
                 }
-            }//end:middle-section
-            
-            .bottom-section {                
-                // border: 1px solid white;
-                font-size: 3rem;
-                text-align: center;
-                background-color: rgb(51, 51, 51);
-                height: 4vh;
-                color: white;
-                position: sticky;
-                bottom: -5px;
-                padding: 0px 10px;
-                width: 100%;      
-                p {
-                    position: relative;
-                    top:5px;
-                }          
-            }//end:bottom-section
-
+            }//end:middle-section        
         }//end:card__side--front
+
+        &--back {
+            .chat-section {
+                // border: 1px solid red;
+                height: 85%;
+                overflow-y: scroll;
+                margin: 5px;
+                width: 97%;
+            }
+        }//end:card__side--back
+
+        .buttons-group-section {
+            position: sticky;
+            bottom: 30px;                
+            button {
+                cursor: pointer;
+                border: 1px solid white;
+                border-radius: 50%;
+                margin: 0 20px;
+                z-index: 100;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                outline:0px !important;
+            }
+        }//end:buttons-group-section
+        
+        .bottom-section {                                
+            font-size: 2.5rem;
+            font-family: 'Dancing Script', cursive;
+            text-align: right;
+            background-color: rgb(51, 51, 51);
+            height: 4vh;
+            color: white;
+            position: sticky;
+            bottom: -5px;
+            padding: 0px 0px;
+            width: 100%;      
+            p {
+                padding: 0px 15px;
+                position: relative;
+                top:5px;
+            }          
+        }//end:bottom-section
     }//end:card__side
 }//end:card
 

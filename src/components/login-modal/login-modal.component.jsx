@@ -81,13 +81,13 @@ class LoginModal extends Component {
                     <img onClick = {this.twitterLogin} src={twitterLogo} alt="twitter" title="Sign in using Twitter"/>
                     <img onClick = {this.githubLogin} src={githubLogo} alt="github" title="Sign in using Github account"/>                    
                 </div>
-                <div className="login-form-section">
+                {/* <div className="login-form-section">
                     <form action="form-class-group" onSubmit={this.loginAnonymously}>
                         <input type="text" placeholder="Enter Email/Username"/>
                         <input type="password" placeholder="Enter Password"/>
                         <button type="submit">Sign in</button>
                     </form>
-                </div>
+                </div> */}
                 <div className="register-section">
                     <p>or click here to <a href="#">Register / Sign up</a></p>
                 </div>

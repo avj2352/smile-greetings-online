@@ -174,7 +174,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(right bottom, rgba(104, 135, 230, 0.5), rgba(25, 53, 137, 0.4)), url("./../../assets/backgrounds/nature-animated-03.gif");
+  background: linear-gradient(right bottom, rgba(104, 135, 230, 0.5), rgba(25, 53, 137, 0.4)), url("./../../assets/backgrounds/login_background.jpg");
   background-size: cover;
   background-blend-mode: color;
   z-index: 0; }
@@ -227,16 +227,38 @@ body {
     position: relative;
     top: 95px; }
 
-.card__side--front .bottom-section {
-  font-size: 3rem;
-  text-align: center;
+.card__side--back .chat-section {
+  height: 85%;
+  overflow-y: scroll;
+  margin: 5px;
+  width: 97%; }
+
+.card__side .buttons-group-section {
+  position: sticky;
+  bottom: 30px; }
+  .card__side .buttons-group-section button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    z-index: 100;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    outline: 0px !important; }
+
+.card__side .bottom-section {
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: right;
   background-color: #333333;
   height: 4vh;
   color: white;
   position: sticky;
   bottom: -5px;
-  padding: 0px 10px;
+  padding: 0px 0px;
   width: 100%; }
-  .card__side--front .bottom-section p {
+  .card__side .bottom-section p {
+    padding: 0px 15px;
     position: relative;
     top: 5px; }
